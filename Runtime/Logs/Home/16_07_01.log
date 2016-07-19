@@ -1,0 +1,512 @@
+[ 2016-07-01T13:15:19+08:00 ] 58.247.206.149 /php/weiphp3/index.php?s=/home/weixin/index/id/1.html&signature=f39cb25e066263596c66672542816ad149a8c3b7&timestamp=1467350118&nonce=982909108&openid=oYMvgs8VZHuvdA9ErlGyNuDxw_ds
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.115505s ]
+INFO: [ app_init ] --END-- [ RunTime:0.125431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002028s ]
+NOTIC: [8] Undefined index: doNotInit C:\www\php\weiphp3\Application\Home\Model\WeixinModel.class.php 第 14 行.
+NOTIC: [8] Undefined index: encrypt_type C:\www\php\weiphp3\Application\Home\Model\WeixinModel.class.php 第 20 行.
+SQL: INSERT INTO `wp_weixin_log` (`cTime`,`cTime_format`,`data`,`data_post`) VALUES ('1467350118','2016-07-01 13:15:18','a:6:{s:10:\"ToUserName\";s:15:\"gh_89d5cf544493\";s:12:\"FromUserName\";s:28:\"oYMvgs8VZHuvdA9ErlGyNuDxw_ds\";s:10:\"CreateTime\";s:10:\"1467350118\";s:7:\"MsgType\";s:5:\"event\";s:5:\"Event\";s:5:\"CLICK\";s:8:\"EventKey\";s:9:\"微社区\";}','<xml><ToUserName><![CDATA[gh_89d5cf544493]]></ToUserName>
+<FromUserName><![CDATA[oYMvgs8VZHuvdA9ErlGyNuDxw_ds]]></FromUserName>
+<CreateTime>1467350118</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[CLICK]]></Event>
+<EventKey><![CDATA[微社区]]></EventKey>
+</xml>') [ RunTime:0.0149s ]
+SQL: SELECT `name`,type_1 as val FROM `wp_public_auth`  [ RunTime:0.0078s ]
+SQL: SELECT `uid` FROM `wp_public_follow` WHERE `token` = 'gh_89d5cf544493' AND `openid` = 'oYMvgs8VZHuvdA9ErlGyNuDxw_ds' LIMIT 1   [ RunTime:0.0037s ]
+NOTIC: [8] Undefined variable: user C:\www\php\weiphp3\Application\Home\Controller\WeixinController.class.php 第 301 行.
+NOTIC: [8] Undefined index: Content C:\www\php\weiphp3\Application\Home\Controller\WeixinController.class.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\www\php\weiphp3\Application\Home\Controller\WeixinController.class.php 第 46 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined index: appid C:\www\php\weiphp3\Application\Home\Controller\WeixinController.class.php 第 73 行.
+SQL: SELECT * FROM `wp_custom_menu` WHERE `keyword` = '微社区' AND `from_type` <> 9 AND `token` = 'gh_89d5cf544493' AND `type` = 'click' ORDER BY id desc LIMIT 1   [ RunTime:0.0171s ]
+NOTIC: [8] Undefined index: doNotInit C:\www\php\weiphp3\Application\Home\Model\WeixinModel.class.php 第 14 行.
+NOTIC: [8] Undefined index: encrypt_type C:\www\php\weiphp3\Application\Home\Model\WeixinModel.class.php 第 20 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined index: doNotInit C:\www\php\weiphp3\Application\Home\Model\WeixinModel.class.php 第 123 行.
+SQL: INSERT INTO `wp_weixin_log` (`cTime`,`cTime_format`,`data`,`data_post`) VALUES ('1467350119','2016-07-01 13:15:19','<?xml version=\"1.0\"?>
+<xml><Content><![CDATA[快来微社区参与我们的讨论吧，<a href=\'http://jasongan.cn/php/weiphp3/index.php?s=/addon/Weiba/Wap/index/token/gh_89d5cf544493/openid/oYMvgs8VZHuvdA9ErlGyNuDxw_ds.html\'>点击这里进入</a>]]></Content><ToUserName><![CDATA[oYMvgs8VZHuvdA9ErlGyNuDxw_ds]]></ToUserName><FromUserName><![CDATA[gh_89d5cf544493]]></FromUserName><CreateTime>1467350118</CreateTime><MsgType><![CDATA[text]]></MsgType></xml>
+','_replyData') [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: encrypt_type C:\www\php\weiphp3\Application\Home\Model\WeixinModel.class.php 第 133 行.
+SQL: SELECT * FROM `wp_custom_sendall` WHERE `ToUserName` = 'gh_89d5cf544493' AND `is_send` = 0 AND `FromUserName` = 'oYMvgs8VZHuvdA9ErlGyNuDxw_ds'  [ RunTime:0.0059s ]
+
+[ 2016-07-01T13:15:19+08:00 ] 101.226.66.172 /php/weiphp3/index.php?s=/home/weixin/index/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006448s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007685s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001545s ]
+NOTIC: [8] Undefined index: doNotInit C:\www\php\weiphp3\Application\Home\Model\WeixinModel.class.php 第 14 行.
+
+[ 2016-07-01T13:15:25+08:00 ] 219.233.70.10 /php/weiphp3/index.php?s=/addon/Weiba/Wap/index/token/gh_89d5cf544493/openid/oYMvgs8VZHuvdA9ErlGyNuDxw_ds.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.008804s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001523s ]
+SQL: SELECT * FROM `wp_user` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0162s ]
+SQL: SELECT `uid`,`has_public`,`headface_url`,`GammaAppId`,`GammaSecret`,`copy_right`,`tongji_code`,`website_logo` FROM `wp_manager` WHERE ( uid='1' ) LIMIT 1   [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0355s ]
+SQL: SELECT a.group_id,g.title,g.type,g.icon FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0040s ]
+SQL: SELECT `openid`,`token`,`uid`,`has_subscribe`,`syc_status`,`remark` FROM `wp_public_follow` WHERE ( uid='1' )  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\www\php\weiphp3\Application\Common\Model\UserModel.class.php 第 251 行.
+NOTIC: [8] Undefined index:  C:\www\php\weiphp3\Application\Common\Model\UserModel.class.php 第 271 行.
+NOTIC: [8] Undefined index:  C:\www\php\weiphp3\Application\Common\Model\UserModel.class.php 第 272 行.
+NOTIC: [8] Undefined variable: txt C:\www\php\weiphp3\Application\Common\Common\function.php 第 3299 行.
+SQL: SELECT `tag_id` FROM `wp_user_tag_link` WHERE `uid` = 1  [ RunTime:0.0042s ]
+SQL: SELECT * FROM `wp_manager` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `uid` FROM `wp_public_follow` WHERE `openid` = 'oYMvgs8VZHuvdA9ErlGyNuDxw_ds' AND `token` = 'gh_89d5cf544493' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_user` WHERE `uid` = 10 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`has_public`,`headface_url`,`GammaAppId`,`GammaSecret`,`copy_right`,`tongji_code`,`website_logo` FROM `wp_manager` WHERE ( uid='10' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0016s ]
+SQL: SELECT a.group_id,g.title,g.type,g.icon FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='10' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SELECT `openid`,`token`,`uid`,`has_subscribe`,`syc_status`,`remark` FROM `wp_public_follow` WHERE ( uid='10' )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: txt C:\www\php\weiphp3\Application\Common\Common\function.php 第 3299 行.
+SQL: SELECT `tag_id` FROM `wp_user_tag_link` WHERE `uid` = 10  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: uid C:\www\php\weiphp3\ThinkPHP\Library\Think\Controller.class.php 第 529 行.
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0018s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='10' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wp_auth_rule` [ RunTime:0.0059s ]
+SQL: SELECT `condition`,`name` FROM `wp_auth_rule` WHERE `id` NOT IN ('') AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: order C:\www\php\weiphp3\Addons\Weiba\Controller\WapController.class.php 第 23 行.
+SQL: SELECT * FROM `wp_weiba` WHERE ( is_del=1 OR status=0 AND token="gh_89d5cf544493" )  [ RunTime:0.0191s ]
+SQL: SELECT * FROM `wp_weiba_post` WHERE `is_del` = 0 AND `is_index` = 1 AND `token` = 'gh_89d5cf544493' ORDER BY index_order asc LIMIT 4   [ RunTime:0.0055s ]
+SQL: SELECT a.* FROM `wp_weiba_post` a, `wp_weiba` b WHERE a.weiba_id=b.id AND ( b.`is_del` = 0 ) AND ( b.`status` = 1 ) AND ( a.`is_del` = 0 ) AND ( a.`token` = 'gh_89d5cf544493' ) ORDER BY a.read_count desc,a.reply_count desc LIMIT 20 [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_user` WHERE `uid` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`has_public`,`headface_url`,`GammaAppId`,`GammaSecret`,`copy_right`,`tongji_code`,`website_logo` FROM `wp_manager` WHERE ( uid='3' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0016s ]
+SQL: SELECT a.group_id,g.title,g.type,g.icon FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SELECT `openid`,`token`,`uid`,`has_subscribe`,`syc_status`,`remark` FROM `wp_public_follow` WHERE ( uid='3' )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: txt C:\www\php\weiphp3\Application\Common\Common\function.php 第 3299 行.
+SQL: SELECT `tag_id` FROM `wp_user_tag_link` WHERE `uid` = 3  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000365s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000485s ]
+NOTIC: [8] Use of undefined constant UPLOAD_URL - assumed 'UPLOAD_URL' C:\www\php\weiphp3\Runtime\Cache\Home\6c86d4d452e55f45441070038ee1d2b8.php 第 69 行.
+NOTIC: [8] Use of undefined constant APP_NAME - assumed 'APP_NAME' C:\www\php\weiphp3\Runtime\Cache\Home\6c86d4d452e55f45441070038ee1d2b8.php 第 71 行.
+NOTIC: [8] Undefined variable: initNums C:\www\php\weiphp3\Runtime\Cache\Home\6c86d4d452e55f45441070038ee1d2b8.php 第 74 行.
+NOTIC: [8] Undefined variable: site C:\www\php\weiphp3\Runtime\Cache\Home\6c86d4d452e55f45441070038ee1d2b8.php 第 75 行.
+NOTIC: [8] Undefined variable: unsetting C:\www\php\weiphp3\Runtime\Cache\Home\6c86d4d452e55f45441070038ee1d2b8.php 第 78 行.
+NOTIC: [8] Undefined variable: weiba_curCityInfo C:\www\php\weiphp3\Runtime\Cache\Home\6c86d4d452e55f45441070038ee1d2b8.php 第 118 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: weiba_curCityInfo C:\www\php\weiphp3\Runtime\Cache\Home\6c86d4d452e55f45441070038ee1d2b8.php 第 122 行.
+NOTIC: [8] Undefined index: query C:\www\php\weiphp3\ThinkPHP\Common\functions.php 第 1002 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined index: query C:\www\php\weiphp3\ThinkPHP\Common\functions.php 第 1002 行.
+NOTIC: [8] Undefined index: query C:\www\php\weiphp3\ThinkPHP\Common\functions.php 第 1002 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+SQL: SELECT * FROM `wp_picture` WHERE `status` = 1 AND `id` = 21 LIMIT 1   [ RunTime:0.0131s ]
+NOTIC: [8] Undefined variable: thumb C:\www\php\weiphp3\Application\Common\Common\function.php 第 1071 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined index: query C:\www\php\weiphp3\ThinkPHP\Common\functions.php 第 1002 行.
+NOTIC: [8] Undefined index: query C:\www\php\weiphp3\ThinkPHP\Common\functions.php 第 1002 行.
+NOTIC: [8] Undefined index: query C:\www\php\weiphp3\ThinkPHP\Common\functions.php 第 1002 行.
+NOTIC: [8] Undefined index: query C:\www\php\weiphp3\ThinkPHP\Common\functions.php 第 1002 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Use of undefined constant APPS_URL - assumed 'APPS_URL' C:\www\php\weiphp3\Runtime\Cache\Home\6c86d4d452e55f45441070038ee1d2b8.php 第 182 行.
+NOTIC: [8] Undefined index: image C:\www\php\weiphp3\Runtime\Cache\Home\6c86d4d452e55f45441070038ee1d2b8.php 第 192 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined index: event C:\www\php\weiphp3\Runtime\Cache\Home\6c86d4d452e55f45441070038ee1d2b8.php 第 207 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined index: is_img C:\www\php\weiphp3\Runtime\Cache\Home\6c86d4d452e55f45441070038ee1d2b8.php 第 185 行.
+NOTIC: [8] Undefined index: image C:\www\php\weiphp3\Runtime\Cache\Home\6c86d4d452e55f45441070038ee1d2b8.php 第 192 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined index: event C:\www\php\weiphp3\Runtime\Cache\Home\6c86d4d452e55f45441070038ee1d2b8.php 第 207 行.
+NOTIC: [8] Undefined variable: weibalist C:\www\php\weiphp3\Runtime\Cache\Home\6c86d4d452e55f45441070038ee1d2b8.php 第 215 行.
+NOTIC: [8] Undefined variable: profile C:\www\php\weiphp3\Runtime\Cache\Home\6c86d4d452e55f45441070038ee1d2b8.php 第 249 行.
+NOTIC: [8] Undefined variable: profile C:\www\php\weiphp3\Runtime\Cache\Home\6c86d4d452e55f45441070038ee1d2b8.php 第 250 行.
+NOTIC: [8] Undefined variable: profile C:\www\php\weiphp3\Runtime\Cache\Home\6c86d4d452e55f45441070038ee1d2b8.php 第 251 行.
+NOTIC: [8] Undefined variable: profile C:\www\php\weiphp3\Runtime\Cache\Home\6c86d4d452e55f45441070038ee1d2b8.php 第 252 行.
+NOTIC: [8] Undefined variable: profile C:\www\php\weiphp3\Runtime\Cache\Home\6c86d4d452e55f45441070038ee1d2b8.php 第 253 行.
+NOTIC: [8] Undefined variable: is_post_detail C:\www\php\weiphp3\Runtime\Cache\Home\6c86d4d452e55f45441070038ee1d2b8.php 第 281 行.
+NOTIC: [8] Undefined variable: site C:\www\php\weiphp3\Runtime\Cache\Home\6c86d4d452e55f45441070038ee1d2b8.php 第 420 行.
+NOTIC: [8] Undefined variable: site C:\www\php\weiphp3\Runtime\Cache\Home\6c86d4d452e55f45441070038ee1d2b8.php 第 421 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090741s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090956s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002505s ]
+
+[ 2016-07-01T13:15:29+08:00 ] 180.153.211.172 /php/weiphp3/index.php?s=/home/weixin/index/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.009574s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001891s ]
+NOTIC: [8] Undefined index: doNotInit C:\www\php\weiphp3\Application\Home\Model\WeixinModel.class.php 第 14 行.
+
+[ 2016-07-01T13:15:31+08:00 ] 219.233.70.10 /php/weiphp3/index.php?s=/addon/Weiba/Wap/MCount.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.007229s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001309s ]
+NOTIC: [8] Undefined index: uid C:\www\php\weiphp3\ThinkPHP\Library\Think\Controller.class.php 第 529 行.
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0018s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='10' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wp_auth_rule` [ RunTime:0.0016s ]
+SQL: SELECT `condition`,`name` FROM `wp_auth_rule` WHERE `id` NOT IN ('') AND `status` = 1  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001423s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001513s ]
+
+[ 2016-07-01T13:15:43+08:00 ] 58.247.206.139 /php/weiphp3/index.php?s=/home/weixin/index/id/1.html&signature=0ba4e5272f1e172b08a48442e519ba595a825038&timestamp=1467350142&nonce=674485149&openid=oYMvgs8VZHuvdA9ErlGyNuDxw_ds
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006323s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001280s ]
+NOTIC: [8] Undefined index: doNotInit C:\www\php\weiphp3\Application\Home\Model\WeixinModel.class.php 第 14 行.
+NOTIC: [8] Undefined index: encrypt_type C:\www\php\weiphp3\Application\Home\Model\WeixinModel.class.php 第 20 行.
+SQL: INSERT INTO `wp_weixin_log` (`cTime`,`cTime_format`,`data`,`data_post`) VALUES ('1467350142','2016-07-01 13:15:42','a:6:{s:10:\"ToUserName\";s:15:\"gh_89d5cf544493\";s:12:\"FromUserName\";s:28:\"oYMvgs8VZHuvdA9ErlGyNuDxw_ds\";s:10:\"CreateTime\";s:10:\"1467350142\";s:7:\"MsgType\";s:5:\"event\";s:5:\"Event\";s:5:\"CLICK\";s:8:\"EventKey\";s:9:\"会员卡\";}','<xml><ToUserName><![CDATA[gh_89d5cf544493]]></ToUserName>
+<FromUserName><![CDATA[oYMvgs8VZHuvdA9ErlGyNuDxw_ds]]></FromUserName>
+<CreateTime>1467350142</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[CLICK]]></Event>
+<EventKey><![CDATA[会员卡]]></EventKey>
+</xml>') [ RunTime:0.0003s ]
+SQL: SELECT `uid` FROM `wp_public_follow` WHERE `token` = 'gh_89d5cf544493' AND `openid` = 'oYMvgs8VZHuvdA9ErlGyNuDxw_ds' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: user C:\www\php\weiphp3\Application\Home\Controller\WeixinController.class.php 第 301 行.
+NOTIC: [8] Undefined index: Content C:\www\php\weiphp3\Application\Home\Controller\WeixinController.class.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\www\php\weiphp3\Application\Home\Controller\WeixinController.class.php 第 46 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined index: appid C:\www\php\weiphp3\Application\Home\Controller\WeixinController.class.php 第 73 行.
+SQL: SELECT * FROM `wp_custom_menu` WHERE `keyword` = '会员卡' AND `from_type` <> 9 AND `token` = 'gh_89d5cf544493' AND `type` = 'click' ORDER BY id desc LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: doNotInit C:\www\php\weiphp3\Application\Home\Model\WeixinModel.class.php 第 14 行.
+NOTIC: [8] Undefined index: encrypt_type C:\www\php\weiphp3\Application\Home\Model\WeixinModel.class.php 第 20 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined index: doNotInit C:\www\php\weiphp3\Application\Home\Model\WeixinModel.class.php 第 123 行.
+SQL: INSERT INTO `wp_weixin_log` (`cTime`,`cTime_format`,`data`,`data_post`) VALUES ('1467350143','2016-07-01 13:15:43','<?xml version=\"1.0\"?>
+<xml><ArticleCount>1</ArticleCount><Articles><item><Title><![CDATA[悦慢咖啡会员卡]]></Title><Description><![CDATA[上海市浦东新区张杨路400号]]></Description><PicUrl><![CDATA[http://jasongan.cn/php/weiphp3/Addons/Card/View/default/Public/cover.png]]></PicUrl><Url><![CDATA[http://jasongan.cn/php/weiphp3/index.php?s=/addon/Card/Card/show/token/gh_89d5cf544493/openid/oYMvgs8VZHuvdA9ErlGyNuDxw_ds.html&openid=oYMvgs8VZHuvdA9ErlGyNuDxw_ds]]></Url></item></Articles><ToUserName><![CDATA[oYMvgs8VZHuvdA9ErlGyNuDxw_ds]]></ToUserName><FromUserName><![CDATA[gh_89d5cf544493]]></FromUserName><CreateTime>1467350142</CreateTime><MsgType><![CDATA[news]]></MsgType></xml>
+','_replyData') [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: encrypt_type C:\www\php\weiphp3\Application\Home\Model\WeixinModel.class.php 第 133 行.
+SQL: SELECT * FROM `wp_custom_sendall` WHERE `ToUserName` = 'gh_89d5cf544493' AND `is_send` = 0 AND `FromUserName` = 'oYMvgs8VZHuvdA9ErlGyNuDxw_ds'  [ RunTime:0.0003s ]
+
+[ 2016-07-01T13:15:50+08:00 ] 219.233.70.10 /php/weiphp3/index.php?s=/addon/Guess/Guess/index/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006288s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002601s ]
+NOTIC: [2048] Declaration of Addons\Guess\Controller\GuessController::lists() should be compatible with that of Home\Controller\AddonsController::lists() C:\www\php\weiphp3\Addons\Guess\Controller\GuessController.class.php 第 7 行.
+NOTIC: [2048] Declaration of Addons\Guess\Controller\GuessController::edit() should be compatible with that of Home\Controller\AddonsController::edit() C:\www\php\weiphp3\Addons\Guess\Controller\GuessController.class.php 第 7 行.
+NOTIC: [2048] Declaration of Addons\Guess\Controller\GuessController::add() should be compatible with that of Home\Controller\AddonsController::add() C:\www\php\weiphp3\Addons\Guess\Controller\GuessController.class.php 第 7 行.
+NOTIC: [8] Undefined index: uid C:\www\php\weiphp3\ThinkPHP\Library\Think\Controller.class.php 第 529 行.
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0027s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='10' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wp_auth_rule` [ RunTime:0.0016s ]
+SQL: SELECT `condition`,`name` FROM `wp_auth_rule` WHERE `id` NOT IN ('') AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'guess' LIMIT 1   [ RunTime:0.0086s ]
+SQL: SELECT * FROM `wp_model` WHERE `name` = 'guess_option' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wp_guess` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0187s ]
+SQL: SELECT * FROM `wp_guess_option` WHERE `guess_id` = 1 ORDER BY `order` asc  [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: total C:\www\php\weiphp3\Addons\Guess\Controller\GuessController.class.php 第 224 行.
+NOTIC: [2] Missing argument 3 for Addons\Guess\Model\GuessLogModel::getFollowLog(), called in C:\www\php\weiphp3\Addons\Guess\Controller\GuessController.class.php on line 233 and defined C:\www\php\weiphp3\Addons\Guess\Model\GuessLogModel.class.php 第 12 行.
+NOTIC: [8] Undefined variable: token C:\www\php\weiphp3\Addons\Guess\Model\GuessLogModel.class.php 第 16 行.
+SQL: SELECT * FROM `wp_guess_log` WHERE ( guess_id='1' AND user_id='10' AND token='' AND optionIds <>'' )  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `wp_guess_log` WHERE ( guess_id='1' AND user_id='10' AND token='gh_89d5cf544493' AND optionIds <>'' )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+SQL: SELECT * FROM `wp_picture` WHERE `status` = 1 AND `id` = 45 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: thumb C:\www\php\weiphp3\Application\Common\Common\function.php 第 1071 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' C:\www\php\weiphp3\Runtime\Cache\Home\10772c0def15f1bca924cb28789a0a9c.php 第 60 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\www\php\weiphp3\Runtime\Cache\Home\10772c0def15f1bca924cb28789a0a9c.php 第 60 行.
+NOTIC: [8] Undefined variable: joinData C:\www\php\weiphp3\Runtime\Cache\Home\10772c0def15f1bca924cb28789a0a9c.php 第 60 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given C:\www\php\weiphp3\Runtime\Cache\Home\10772c0def15f1bca924cb28789a0a9c.php 第 60 行.
+SQL: SELECT * FROM `wp_picture` WHERE `status` = 1 AND `id` = 102 LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: thumb C:\www\php\weiphp3\Application\Common\Common\function.php 第 1071 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' C:\www\php\weiphp3\Runtime\Cache\Home\10772c0def15f1bca924cb28789a0a9c.php 第 60 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\www\php\weiphp3\Runtime\Cache\Home\10772c0def15f1bca924cb28789a0a9c.php 第 60 行.
+NOTIC: [8] Undefined variable: joinData C:\www\php\weiphp3\Runtime\Cache\Home\10772c0def15f1bca924cb28789a0a9c.php 第 60 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given C:\www\php\weiphp3\Runtime\Cache\Home\10772c0def15f1bca924cb28789a0a9c.php 第 60 行.
+SQL: SELECT * FROM `wp_picture` WHERE `status` = 1 AND `id` = 103 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: thumb C:\www\php\weiphp3\Application\Common\Common\function.php 第 1071 行.
+NOTIC: [8] Undefined variable: thumb C:\www\php\weiphp3\Application\Common\Common\function.php 第 1071 行.
+NOTIC: [8] Undefined index: query C:\www\php\weiphp3\ThinkPHP\Common\functions.php 第 1002 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038118s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038218s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004631s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003118s ]
+
+[ 2016-07-01T13:15:50+08:00 ] 58.247.206.150 /php/weiphp3/index.php?s=/home/weixin/index/id/1.html&signature=860dfe785d904b0bc517aca1ebd87e8f15b7088e&timestamp=1467350150&nonce=804089824&openid=oYMvgs8VZHuvdA9ErlGyNuDxw_ds
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.007876s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001645s ]
+NOTIC: [8] Undefined index: doNotInit C:\www\php\weiphp3\Application\Home\Model\WeixinModel.class.php 第 14 行.
+NOTIC: [8] Undefined index: encrypt_type C:\www\php\weiphp3\Application\Home\Model\WeixinModel.class.php 第 20 行.
+SQL: INSERT INTO `wp_weixin_log` (`cTime`,`cTime_format`,`data`,`data_post`) VALUES ('1467350150','2016-07-01 13:15:50','a:7:{s:10:\"ToUserName\";s:15:\"gh_89d5cf544493\";s:12:\"FromUserName\";s:28:\"oYMvgs8VZHuvdA9ErlGyNuDxw_ds\";s:10:\"CreateTime\";s:10:\"1467350150\";s:7:\"MsgType\";s:5:\"event\";s:5:\"Event\";s:4:\"VIEW\";s:8:\"EventKey\";s:77:\"http://jasongan.cn/php/weiphp3/index.php?s=/addon/Guess/Guess/index/id/1.html\";s:6:\"MenuId\";s:9:\"416529395\";}','<xml><ToUserName><![CDATA[gh_89d5cf544493]]></ToUserName>
+<FromUserName><![CDATA[oYMvgs8VZHuvdA9ErlGyNuDxw_ds]]></FromUserName>
+<CreateTime>1467350150</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://jasongan.cn/php/weiphp3/index.php?s=/addon/Guess/Guess/index/id/1.html]]></EventKey>
+<MenuId>416529395</MenuId>
+</xml>') [ RunTime:0.0004s ]
+SQL: SELECT `uid` FROM `wp_public_follow` WHERE `token` = 'gh_89d5cf544493' AND `openid` = 'oYMvgs8VZHuvdA9ErlGyNuDxw_ds' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: user C:\www\php\weiphp3\Application\Home\Controller\WeixinController.class.php 第 301 行.
+NOTIC: [8] Undefined index: Content C:\www\php\weiphp3\Application\Home\Controller\WeixinController.class.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\www\php\weiphp3\Application\Home\Controller\WeixinController.class.php 第 46 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined index: appid C:\www\php\weiphp3\Application\Home\Controller\WeixinController.class.php 第 73 行.
+SQL: SELECT * FROM `wp_custom_menu` WHERE `keyword` = 'view' AND `from_type` <> 9 AND `token` = 'gh_89d5cf544493' AND `type` = 'click' ORDER BY id desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_keyword` WHERE ( token='0' OR token='gh_89d5cf544493' ) AND `keyword` = 'view' AND `keyword_type` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0135s ]
+SQL: SELECT * FROM `wp_keyword` WHERE ( token='0' OR token='gh_89d5cf544493' ) AND `keyword` = 'view' AND `keyword_type` = 5 ORDER BY RAND() LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_keyword` WHERE ( token='0' OR token='gh_89d5cf544493' ) AND `keyword_type` in (1,2,3,4) ORDER BY keyword_length desc, id desc  [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\www\php\weiphp3\Application\Home\Controller\WeixinController.class.php 第 197 行.
+SQL: SELECT * FROM `wp_keyword` WHERE ( token='0' OR token='gh_89d5cf544493' ) AND `keyword` = '*' ORDER BY id desc LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: doNotInit C:\www\php\weiphp3\Application\Home\Model\WeixinModel.class.php 第 14 行.
+NOTIC: [8] Undefined index: encrypt_type C:\www\php\weiphp3\Application\Home\Model\WeixinModel.class.php 第 20 行.
+SQL: SELECT `content` FROM `wp_material_text` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0053s ]
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #2 is not an array C:\www\php\weiphp3\Application\Common\Common\function.php 第 518 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #2 is not an array C:\www\php\weiphp3\Application\Common\Common\function.php 第 518 行.
+NOTIC: [8] Undefined index: doNotInit C:\www\php\weiphp3\Application\Home\Model\WeixinModel.class.php 第 123 行.
+SQL: INSERT INTO `wp_weixin_log` (`cTime`,`cTime_format`,`data`,`data_post`) VALUES ('1467350150','2016-07-01 13:15:50','<?xml version=\"1.0\"?>
+<xml><Content><![CDATA[收到您的留言, 我们会尽快回复您!]]></Content><ToUserName><![CDATA[oYMvgs8VZHuvdA9ErlGyNuDxw_ds]]></ToUserName><FromUserName><![CDATA[gh_89d5cf544493]]></FromUserName><CreateTime>1467350150</CreateTime><MsgType><![CDATA[text]]></MsgType></xml>
+','_replyData') [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: encrypt_type C:\www\php\weiphp3\Application\Home\Model\WeixinModel.class.php 第 133 行.
+SQL: SELECT * FROM `wp_custom_sendall` WHERE `ToUserName` = 'gh_89d5cf544493' AND `is_send` = 0 AND `FromUserName` = 'oYMvgs8VZHuvdA9ErlGyNuDxw_ds'  [ RunTime:0.0003s ]
+
+[ 2016-07-01T16:46:17+08:00 ] 58.247.206.157 /php/weiphp3/index.php?s=/home/weixin/index/id/1.html&signature=6d02ea0f0f27fbad96f45b0191097b79784d2581&timestamp=1467362775&nonce=1312800083&openid=oYMvgs0F5Z8twiMk0-_2k7NqlLaA
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.105132s ]
+INFO: [ app_init ] --END-- [ RunTime:0.106945s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002076s ]
+NOTIC: [8] Undefined index: doNotInit C:\www\php\weiphp3\Application\Home\Model\WeixinModel.class.php 第 14 行.
+NOTIC: [8] Undefined index: encrypt_type C:\www\php\weiphp3\Application\Home\Model\WeixinModel.class.php 第 20 行.
+SQL: INSERT INTO `wp_weixin_log` (`cTime`,`cTime_format`,`data`,`data_post`) VALUES ('1467362776','2016-07-01 16:46:16','a:6:{s:10:\"ToUserName\";s:15:\"gh_89d5cf544493\";s:12:\"FromUserName\";s:28:\"oYMvgs0F5Z8twiMk0-_2k7NqlLaA\";s:10:\"CreateTime\";s:10:\"1467362775\";s:7:\"MsgType\";s:5:\"event\";s:5:\"Event\";s:5:\"CLICK\";s:8:\"EventKey\";s:6:\"签到\";}','<xml><ToUserName><![CDATA[gh_89d5cf544493]]></ToUserName>
+<FromUserName><![CDATA[oYMvgs0F5Z8twiMk0-_2k7NqlLaA]]></FromUserName>
+<CreateTime>1467362775</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[CLICK]]></Event>
+<EventKey><![CDATA[签到]]></EventKey>
+</xml>') [ RunTime:0.0273s ]
+SQL: SELECT `uid` FROM `wp_public_follow` WHERE `token` = 'gh_89d5cf544493' AND `openid` = 'oYMvgs0F5Z8twiMk0-_2k7NqlLaA' LIMIT 1   [ RunTime:0.0075s ]
+NOTIC: [8] Undefined variable: user C:\www\php\weiphp3\Application\Home\Controller\WeixinController.class.php 第 301 行.
+NOTIC: [8] Undefined index: Content C:\www\php\weiphp3\Application\Home\Controller\WeixinController.class.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\www\php\weiphp3\Application\Home\Controller\WeixinController.class.php 第 46 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons C:\www\php\weiphp3\Application\Common\Common\function.php 第 501 行.
+NOTIC: [8] Undefined index: appid C:\www\php\weiphp3\Application\Home\Controller\WeixinController.class.php 第 73 行.
+SQL: SELECT * FROM `wp_custom_menu` WHERE `keyword` = '签到' AND `from_type` <> 9 AND `token` = 'gh_89d5cf544493' AND `type` = 'click' ORDER BY id desc LIMIT 1   [ RunTime:0.0159s ]
+NOTIC: [8] Undefined index: doNotInit C:\www\php\weiphp3\Application\Home\Model\WeixinModel.class.php 第 14 行.
+NOTIC: [8] Undefined index: encrypt_type C:\www\php\weiphp3\Application\Home\Model\WeixinModel.class.php 第 20 行.
+SQL: SELECT `uid` FROM `wp_public_follow` WHERE `openid` = 'oYMvgs0F5Z8twiMk0-_2k7NqlLaA' AND `token` = 'gh_89d5cf544493' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wp_signin_log` WHERE `uid` = '3' AND `token` = 'gh_89d5cf544493' AND `sTime` >= 1467302400 LIMIT 1   [ RunTime:0.0053s ]
+SQL: INSERT INTO `wp_signin_log` (`uid`,`token`,`sTime`,`score`) VALUES ('3','gh_89d5cf544493','1467362777','1') [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: signin C:\www\php\weiphp3\Application\Common\Model\CreditModel.class.php 第 61 行.
+SQL: INSERT INTO `wp_credit_data` (`credit_name`,`admin_uid`,`score`,`uid`,`cTime`,`token`) VALUES ('signin','0','1','3','1467362777','gh_89d5cf544493') [ RunTime:0.0051s ]
+SQL: UPDATE `wp_user` SET `score`='129',`experience`='100' WHERE `uid` = 3 [ RunTime:0.0102s ]
+SQL: SELECT * FROM `wp_user` WHERE `uid` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`has_public`,`headface_url`,`GammaAppId`,`GammaSecret`,`copy_right`,`tongji_code`,`website_logo` FROM `wp_manager` WHERE ( uid='3' ) LIMIT 1   [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0187s ]
+SQL: SELECT a.group_id,g.title,g.type,g.icon FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0048s ]
+SQL: SELECT `openid`,`token`,`uid`,`has_subscribe`,`syc_status`,`remark` FROM `wp_public_follow` WHERE ( uid='3' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: txt C:\www\php\weiphp3\Application\Common\Common\function.php 第 3299 行.
+SQL: SELECT `tag_id` FROM `wp_user_tag_link` WHERE `uid` = 3  [ RunTime:0.0033s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wp_signin_log` WHERE `token` = 'gh_89d5cf544493' AND `sTime` >= 1467302400 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_signin_log` WHERE `token` = 'gh_89d5cf544493' AND `sTime` >= 1467302400 ORDER BY id ASC LIMIT 5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_user` WHERE `uid` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `sTime` FROM `wp_signin_log` WHERE `token` = 'gh_89d5cf544493' AND `uid` = '3' ORDER BY sTime desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: doNotInit C:\www\php\weiphp3\Application\Home\Model\WeixinModel.class.php 第 123 行.
+SQL: INSERT INTO `wp_weixin_log` (`cTime`,`cTime_format`,`data`,`data_post`) VALUES ('1467362777','2016-07-01 16:46:17','<?xml version=\"1.0\"?>
+<xml><Content><![CDATA[恭喜您,签到成功
+
+本次签到获得1积分
+
+当前总积分129
+
+2016-07-01 16:46:17
+
+您今天是第1位签到
+
+签到排行榜：
+
+第1名  \"%E9%98%BF%E8%BF%BD%28J%29\"  16:46:17
+]]></Content><ToUserName><![CDATA[oYMvgs0F5Z8twiMk0-_2k7NqlLaA]]></ToUserName><FromUserName><![CDATA[gh_89d5cf544493]]></FromUserName><CreateTime>1467362776</CreateTime><MsgType><![CDATA[text]]></MsgType></xml>
+','_replyData') [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: encrypt_type C:\www\php\weiphp3\Application\Home\Model\WeixinModel.class.php 第 133 行.
+SQL: SELECT * FROM `wp_custom_sendall` WHERE `ToUserName` = 'gh_89d5cf544493' AND `is_send` = 0 AND `FromUserName` = 'oYMvgs0F5Z8twiMk0-_2k7NqlLaA'  [ RunTime:0.0036s ]
+

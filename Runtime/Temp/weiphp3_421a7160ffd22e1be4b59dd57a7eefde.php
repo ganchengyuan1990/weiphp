@@ -1,0 +1,3 @@
+<?php
+//000000000000a:19:{s:2:"id";s:1:"1";s:7:"content";s:13:"<p>你好</p>";s:4:"code";N;s:8:"appsecre";N;s:6:"openid";N;s:7:"card_id";s:6:"yueman";s:7:"balance";N;s:5:"cover";N;s:10:"background";s:3:"105";s:5:"title";s:15:"悦慢咖啡券";s:12:"button_color";s:7:"#D54036";s:13:"head_bg_color";s:7:"#F9861F";s:9:"shop_logo";s:3:"110";s:9:"shop_name";s:6:"悦慢";s:11:"more_button";s:0:"";s:8:"template";s:7:"default";s:3:"uid";N;s:5:"token";s:15:"gh_89d5cf544493";s:15:"more_button_arr";N;}
+?>

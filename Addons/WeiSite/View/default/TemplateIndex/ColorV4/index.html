@@ -1,0 +1,111 @@
+<include file="Public/mobile_head"/>	
+<link href="{:CUSTOM_TEMPLATE_PATH}Index/ColorV4/main.css?v={:SITE_VERSION}" rel="stylesheet" type="text/css">
+<style>
+body{
+	background:#eee url({$config.background}) no-repeat; background-size:100% 100%
+}
+</style>
+<body id="weisite" >
+<div class="container">
+    <if condition="!empty($slideshow)">
+    <section class="banner" id="banner">
+    	<ul>
+        <volist name="slideshow" id="vo">
+        	<li>
+            	<a href="{$vo.url}"><img src="{$vo.img}"/></a>
+            	<span class="title">{$vo.title}</span>
+            </li>
+         </volist>
+        </ul>
+        <span class="identify">
+        <volist name="slideshow" id="vo">
+        	<em></em>
+         </volist>        
+        </span>
+    </section>
+    </if>
+    <div class="mainbg" style="background:#7ABDE9;">
+<!--  	<img src="{$config.background}" /> -->
+    <volist name="config.background_arr" id="so">
+        <input type='hidden' id='bg_{$key}' value="{$so|get_cover_url}">
+    </volist>
+</div>
+    <if condition="!empty($category)">
+    <section>
+    	<div class="icon_lists">
+            <volist name="category" id="vo">
+                <a class="item" href="{$vo.url}">
+                    <span class="icon"><img src="{$vo.icon}"/></span>
+                    <span class="click_item_txt">{$vo.title}</span>
+                </a>
+            </volist>
+        </div>
+    </section>
+    </if>
+</div>
+<!-- 底部导航 -->
+{$footer_html}
+<!-- 统计代码 -->
+<notempty name="config.code">
+<p class="hide bdtongji">
+{$config.code}
+</p>
+<else />
+<p class="hide bdtongji">
+{$tongji_code}
+</p>
+</notempty>
+</body>
+<script type="text/javascript">
+$(function(){
+    $.WeiPHP.initBanner('#banner',true,5000);
+	var h=$(window).height();
+	$('#weisite').css('min-height',h);
+})
+
+</script>
+<script type="text/javascript">
+$(function(){
+	var count = $('.mainbg input').length;
+	var i=0;
+	 var imgurl='';
+	 setInterval(function(){
+		imgurl=$('#bg_'+i).val();
+// 		 $('.mainbg img').attr('src', imgurl).fadeTo('3000',1);
+		$('#weisite').css('background-image',"url("+imgurl+")");
+		 i++;
+		 if(i==count){
+			 i=0;
+		 }
+	 },3500);
+});
+
+wx.ready(function(){
+    var shareData = {
+            title: '悦慢咖啡', // 分享标题
+            desc: '咖啡与工匠精神', // 分享描述
+            link: "{:U( 'index',array('token'=>get_token()))}", //分享的链接地址
+            imgUrl: "{:SITE_URL}/Addons/Card/View/default/Public/umind.png", // 分享图标
+            type: 'link', // 分享类型,music、video或link，不填默认为link
+            dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+            success: function () { 
+                //分享送积分
+                //add_credit();
+                $.post("{:U('do_share')}",function(d){
+                    if(d!=0){
+                        alert("恭喜，分享朋友圈得积分1分！");
+                        window.location.reload();
+                    }
+                    
+                });
+            },
+            cancel: function () { 
+            }
+    }
+    wx.onMenuShareAppMessage(shareData);
+    wx.onMenuShareTimeline(shareData);
+    wx.onMenuShareQQ(shareData);
+    wx.onMenuShareWeibo(shareData);
+});
+</script>
+</html>

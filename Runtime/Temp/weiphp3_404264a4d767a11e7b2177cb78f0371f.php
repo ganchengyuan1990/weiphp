@@ -1,0 +1,3 @@
+<?php
+//000000086400a:14:{s:2:"id";s:1:"1";s:7:"keyword";s:12:"吉他之神";s:5:"title";s:12:"吉他之神";s:11:"description";s:18:"只能选一个哦";s:6:"picurl";s:2:"94";s:4:"type";s:1:"0";s:10:"start_date";s:10:"1467005700";s:8:"end_date";s:10:"1467032400";s:6:"is_img";s:1:"1";s:10:"vote_count";s:1:"1";s:5:"cTime";s:10:"1467640172";s:5:"mTime";s:10:"1467034840";s:5:"token";s:15:"gh_89d5cf544493";s:8:"template";s:7:"default";}
+?>

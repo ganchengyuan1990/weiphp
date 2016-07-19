@@ -1,0 +1,3 @@
+<?php
+//000000086400a:20:{s:2:"id";s:1:"1";s:7:"keyword";s:12:"没有良心";s:12:"keyword_type";s:1:"0";s:5:"title";s:24:"谁是没有良心的人";s:5:"intro";s:24:"谁是没有良心的人";s:5:"mTime";s:10:"1467794945";s:5:"cover";s:2:"22";s:5:"cTime";s:10:"1467794945";s:5:"token";s:15:"gh_89d5cf544493";s:10:"finish_tip";s:24:"谢谢，请等待消息";s:7:"content";N;s:12:"shop_address";N;s:6:"appids";N;s:13:"finish_button";N;s:7:"card_id";N;s:8:"appsecre";N;s:8:"template";s:7:"default";s:8:"appidArr";N;s:17:"finish_button_arr";N;s:16:"shop_address_arr";a:0:{}}
+?>

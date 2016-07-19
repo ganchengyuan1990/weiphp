@@ -1,0 +1,76 @@
+<include file="Public/mobile_head"/>	
+
+
+<body>
+	<div id="container" class="container body">
+        <if condition="!empty($list)" >
+    	<div class="conpons_list">
+        	<volist name='list' id="vo">
+                 
+                 <a class="conpon_item" href="{:addons_url('Coupon://Wap/index',array('id'=>$vo['id']))}">
+                 
+                  <div class="coupon_head" 
+                  	 style="<notempty name="vo[background]">background:url({$vo.background|get_cover_url}) no-repeat; background-size:100% auto;<else />background:url({:ADDON_PUBLIC_PATH}/cover_pic.jpg) no-repeat; background-size:100% auto;</notempty>    min-height: 220px;
+    max-height: 250px;
+    overflow: hidden;"
+                    >
+                  		
+                        
+                        <div class="line"></div>
+                        
+                  </div>
+                  <div class="coupon_bottom">
+                  		<p class="title" style="position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px 0 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    background: RGBA(0,0,0,.3);">{$vo.title}
+                        <span class="colorless">
+                        有效期至:
+                                <notempty name="vo.over_time">{$vo.over_time|time_format}</notempty>
+                        </span>
+                      </p>
+                  </div>
+                </a>
+            </volist> 
+        </div>
+     
+       </if>
+        <if condition="empty($list)" >
+        	<div class="empty_default">
+            <br/><br/><br/><br/>
+            	<img src="__IMG__/empty_content.png" width="100"/>
+                <br/>
+                目前还发放优惠券~</p>
+            </div>
+        </if>
+        <else>
+          <div class="btnWrap">
+            <a href="http://jasongan.cn/php/weiphp3/index.php?s=/addon/Coupon/Wap/set_sn_code/id/1/publicid/1.html" class="start_btn" style="background:#0dbd02;     border-radius: 5px;
+    background: #0dbd02;
+    display: block;
+    margin: 20px 15px 20px;
+    padding: 13px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;"> 
+                领取优惠券
+            </a> 
+             </div>
+        </else>
+        <p class="copyright">{$system_copy_right}</p>
+                
+    </div>
+    <include file="Public/card_footer"/>
+    <include file="Public/mobile_foot"/>
+</body>
+<script type="text/javascript">
+document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+	WeixinJSBridge.call('hideToolbar');
+});
+</script>
+</html>

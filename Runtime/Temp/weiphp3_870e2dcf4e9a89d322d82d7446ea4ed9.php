@@ -1,0 +1,9 @@
+<?php
+//000000086400a:21:{s:2:"id";s:3:"175";s:4:"name";s:7:"buy_log";s:5:"title";s:18:"会员消费记录";s:6:"extend";s:1:"0";s:8:"relation";s:0:"";s:7:"need_pk";s:1:"1";s:10:"field_sort";s:67:"["pay","pay_type","branch_id","cTime","token","manager_id","sn_id"]";s:11:"field_group";s:8:"1:基础";s:14:"attribute_list";N;s:13:"template_list";s:0:"";s:12:"template_add";s:0:"";s:13:"template_edit";s:0:"";s:9:"list_grid";s:172:"member_id:会员名称
+phone:电话
+cTime|time_format:消费时间
+branch_id:消费门店
+pay:消费金额
+sn_id:优惠金额
+pay_type|get_name_by_status:消费方式";s:8:"list_row";s:2:"10";s:10:"search_key";s:40:"member:请输入会员名称或手机号";s:11:"search_list";s:0:"";s:11:"create_time";s:10:"1444289843";s:11:"update_time";s:10:"1444392724";s:6:"status";s:1:"1";s:11:"engine_type";s:6:"MyISAM";s:5:"addon";s:4:"Card";}
+?>

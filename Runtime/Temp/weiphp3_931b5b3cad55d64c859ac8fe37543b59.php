@@ -1,0 +1,3 @@
+<?php
+//000000086400a:15:{s:3:"uid";s:1:"1";s:10:"has_public";s:1:"0";s:12:"headface_url";N;s:10:"GammaAppId";N;s:11:"GammaSecret";N;s:10:"copy_right";s:24:"2016©越来越慢所有";s:11:"tongji_code";s:0:"";s:12:"website_logo";N;s:6:"groups";a:3:{i:1;a:4:{s:8:"group_id";s:1:"1";s:5:"title";s:15:"默认用户组";s:4:"type";s:1:"0";s:4:"icon";s:0:"";}i:2;a:4:{s:8:"group_id";s:1:"2";s:5:"title";s:18:"公众号粉丝组";s:4:"type";s:1:"0";s:4:"icon";s:0:"";}i:3;a:4:{s:8:"group_id";s:1:"3";s:5:"title";s:18:"公众号管理组";s:4:"type";s:1:"0";s:4:"icon";s:0:"";}}s:6:"tokens";a:0:{}s:7:"is_root";b:1;s:10:"headimgurl";s:69:"http://jasongan.cn/php/weiphp3/Public/static/face/default_head_50.png";s:8:"sex_name";N;s:9:"sex_alias";N;s:7:"tag_ids";N;}
+?>
