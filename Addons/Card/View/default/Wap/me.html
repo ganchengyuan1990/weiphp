@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>慢城会员中心</title>
@@ -14,14 +15,14 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" type="text/css" href="__CSS__/mobile_module.css?v={:SITE_VERSION}" media="all">
     <script type="text/javascript">
-        //静态变量
-        var SITE_URL = "{:SITE_URL}";
-        var IMG_PATH = "__IMG__";
-        var STATIC_PATH = "__STATIC__";
-        var WX_APPID = "{$jsapiParams.appId}";
-        var WXJS_TIMESTAMP='{$jsapiParams.timestamp}'; 
-        var NONCESTR= '{$jsapiParams.nonceStr}'; 
-        var SIGNATURE= '{$jsapiParams.signature}';
+    //静态变量
+    var SITE_URL = "{:SITE_URL}";
+    var IMG_PATH = "__IMG__";
+    var STATIC_PATH = "__STATIC__";
+    var WX_APPID = "{$jsapiParams.appId}";
+    var WXJS_TIMESTAMP = '{$jsapiParams.timestamp}';
+    var NONCESTR = '{$jsapiParams.nonceStr}';
+    var SIGNATURE = '{$jsapiParams.signature}';
     </script>
     <script type="text/javascript" src="__STATIC__/jquery-2.0.3.min.js"></script>
     <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
@@ -30,74 +31,82 @@
 <link href="{:ADDON_PUBLIC_PATH}/card.css?v={:SITE_VERSION}" rel="stylesheet" type="text/css">
 
 <body>
-	<div class="container body">
-    	<div class="my_card" style="background:url({$config.background_url}) no-repeat -10px -10px; background-size:120% 120%;">
-        	<img class="head" src="{$userInfo.headimgurl}"/>
+    <div class="container body">
+        <div class="my_card" style="background:url({$config.background_url}) no-repeat -10px -10px; background-size:120% 120%;">
+            <img class="head" src="{$userInfo.headimgurl}" />
             <p class="name">{$userInfo.nickname}</p>
-            <p class="level"><a href="{:U('level_intro')}"><img src="{:ADDON_PUBLIC_PATH}/king.png" width="16"/> <notempty name="levelInfo[level]"> {$levelInfo.level}<else/>体验卡</notempty></a></p>
+            <p class="level">
+                <a href="{:U('level_intro')}"><img src="{:ADDON_PUBLIC_PATH}/king.png" width="16" />
+                    <notempty name="levelInfo[level]"> {$levelInfo.level}
+                        <else/>体验卡</notempty>
+                </a>
+            </p>
             <div class="my_card_nav">
-            	<a href="{:addons_url('Coupon://Wap/personal')}&use=1">优惠券<br/>{$coupon_count}</a>
+                <!--  <a href="{:addons_url('Coupon://Wap/personal')}&use=1">优惠券<br/>{$coupon_count}</a>-->
+                <a disabled='ture'>优惠券<br/>{$coupon_count}</a>
                 <a disabled='ture'>代金券<br/>{$shop_coupon_count}</a>
-              <!--  <a href="{:addons_url('Card://Wap/score')}">积分<br/>{$userInfo.score}</a>-->
+                <!--  <a href="{:addons_url('Card://Wap/score')}">积分<br/>{$userInfo.score}</a>-->
                 <a disabled='ture'>积分<br/>{$userInfo.score}</a>
-                <a href="{:addons_url('Card://Wap/recharge')}">余额<br/>{$info.recharge}</a>
+                <!-- <a href="{:addons_url('Card://Wap/recharge')}">余额<br/>{$info.recharge}</a> -->
+                <a disabled='ture'>余额<br/>{$info.recharge}</a>
             </div>
             <a class="edit_icon" href="{:U('writeCardInfo')}&edit=1"></a>
         </div>
-         <div class="h_item_container">
-         <!--    <a class="h_item" href="{:addons_url('Coupon://Wap/personal')}"><img style="vertical-align: -5px;" width="24" src="{:ADDON_PUBLIC_PATH}/ticket.png"/> 我的优惠券 <span class="colorless">({$coupon_count})</span><em></em></a>
+        <div class="h_item_container">
+            <!--    <a class="h_item" href="{:addons_url('Coupon://Wap/personal')}"><img style="vertical-align: -5px;" width="24" src="{:ADDON_PUBLIC_PATH}/ticket.png"/> 我的优惠券 <span class="colorless">({$coupon_count})</span><em></em></a>
             <div class="h_item_line"></div>
              <a class="h_item" href="{:addons_url('ShopCoupon://Wap/personal')}"><img style="vertical-align: -5px;" width="24" src="{:ADDON_PUBLIC_PATH}/money_ticket.png"/> 我的代金券 <span class="colorless">({$shop_coupon_count})</span><em></em></a>
             <div class="h_item_line"></div>
             <a class="h_item" href="{:addons_url('Coupon://Wap/personal')}"><img style="vertical-align: -6px;" width="18" src="{:ADDON_PUBLIC_PATH}/gift.png"/>&nbsp;&nbsp;我的礼品券 <span class="colorless">({$couponCount|intval})</span><em></em></a> 
 <div class="h_item_line"></div>-->
-            <a class="h_item" href="{:U('privilege')}"><img width="24" src="{:ADDON_PUBLIC_PATH}/vip.png"/> 会员卡特权<em></em></a>
+            <a class="h_item" href="{:U('privilege')}"><img width="24" src="{:ADDON_PUBLIC_PATH}/vip.png" /> 会员卡特权<em></em></a>
             <div class="h_item_line"></div>
-           <!--  <a class="h_item" href="{:addons_url('Card://Wap/recharge')}" ><img style="vertical-align: -5px;" width="24" src="{:ADDON_PUBLIC_PATH}/money.png"/> 我的账单<em></em></a>-->
-            <a class="h_item" href="{:addons_url('Card://Wap/score_rule')}" ><img style="vertical-align: -5px;" width="22" src="{:ADDON_PUBLIC_PATH}/score_method_gray.png"/>&nbsp;&nbsp;积分规则<em></em></a>
+            <!--  <a class="h_item" href="{:addons_url('Card://Wap/recharge')}" ><img style="vertical-align: -5px;" width="24" src="{:ADDON_PUBLIC_PATH}/money.png"/> 我的账单<em></em></a>-->
+            <a class="h_item" href="{:addons_url('Card://Wap/score_rule')}"><img style="vertical-align: -5px;" width="22" src="{:ADDON_PUBLIC_PATH}/score_method_gray.png" />&nbsp;&nbsp;积分规则<em></em></a>
             <div class="h_item_line"></div>
-            <a class="h_item" href="{:U('score_exchange')}"><img style="vertical-align: -7px;" width="20" src="{:ADDON_PUBLIC_PATH}/gift.png"/>&nbsp;&nbsp;积分兑换<em></em></a>
+            <a class="h_item" href="{:U('score_exchange')}"><img style="vertical-align: -7px;" width="20" src="{:ADDON_PUBLIC_PATH}/gift.png" />&nbsp;&nbsp;积分兑换<em></em></a>
             <div class="h_item_line"></div>
-            <a class="h_item" href="{:addons_url('Card://Wap/introduction')}" ><img style="vertical-align: -5px;" width="22" src="{:ADDON_PUBLIC_PATH}/intro.png"/>&nbsp;&nbsp;会员卡使用说明<em></em></a>
+            <a class="h_item" href="{:addons_url('Card://Wap/introduction')}"><img style="vertical-align: -5px;" width="22" src="{:ADDON_PUBLIC_PATH}/intro.png" />&nbsp;&nbsp;会员卡使用说明<em></em></a>
             <div class="h_item_line"></div>
-            <a class="h_item" href="{:U( 'writeCardInfo')}&edit=1"><img style="vertical-align: -5px;" width="24" src="{:ADDON_PUBLIC_PATH}/setting_icon.png"/> 完善会员卡资料 <em></em></a>
-
-
-
-            
+            <a class="h_item" href="{:U( 'writeCardInfo')}&edit=1"><img style="vertical-align: -5px;" width="24" src="{:ADDON_PUBLIC_PATH}/setting_icon.png" /> 完善会员卡资料 <em></em></a>
         </div>
-
         <div class="card" onClick="zoomCard();" style="background:none;">
-            <img class="card_bg" src="{$config.background_url}"/>
+            <img class="card_bg" src="{$config.background_url}" />
             <div class="card_container">
-                <p class="logo"><eq name='config.show_logo' value='1'><img src="{$config.logo|get_cover_url}"/></eq></p>
+                <p class="logo">
+                    <eq name='config.show_logo' value='1'><img src="{$config.logo|get_cover_url}" /></eq>
+                </p>
                 <p class="card_name" style="color:{$config.title_color}">{$config.title}</p>
-                <p class="card_number" style="color:{$config.number_color}"><small>会员卡号</small><br/>{$info.number}</p>
+                <p class="card_number" style="color:{$config.number_color}"><small>会员卡号</small>
+                    <br/>{$info.number}</p>
             </div>
         </div>
         <div class="zoom_card_container" style="display:none">
             <a href="javascript:;" onClick="closeZoomCard();" class="close"></a>
             <div class="zoom_card_front_container">
                 <div class="card zoom_card" onClick="turnCard();" style="background:none">
-                    <img class="card_bg" src="{$config.background_url}"/>
+                    <img class="card_bg" src="{$config.background_url}" />
                     <div class="card_container">
-                        <p class="logo"><eq name='config.show_logo' value='1'><img src="{$config.logo|get_cover_url}"/></eq></p>
+                        <p class="logo">
+                            <eq name='config.show_logo' value='1'><img src="{$config.logo|get_cover_url}" /></eq>
+                        </p>
                         <p class="card_name" style="color:{$config.title_color}">{$config.title}</p>
-                        <p class="card_number" style="color:{$config.number_color}"><small>会员卡号</small><br/>{$info.number}</p>
+                        <p class="card_number" style="color:{$config.number_color}"><small>会员卡号</small>
+                            <br/>{$info.number}</p>
                     </div>
                 </div>
             </div>
             <div class="zoom_card_back_container">
                 <div class="card zoom_card_back" onClick="turnBackCard();" style="background:none">
-                    <img class="card_bg" src="{$config.back_background_url}"/>
+                    <img class="card_bg" src="{$config.back_background_url}" />
                     <div class="card_container" style="color:{$config.back_color}">
                         <div class="back_content">
-                            <p class="use_title" >使用说明</p>
+                            <p class="use_title">使用说明</p>
                             <p class="use_content">
-                            <php>
-                             $config['instruction']=str_replace(chr(10), '<br/>', $config['instruction']);
-                             echo $config['instruction'];
-                            </php>
+                                <php>
+                                    $config['instruction']=str_replace(chr(10), '
+                                    <br/>', $config['instruction']); echo $config['instruction'];
+                                </php>
                             </p>
                         </div>
                     </div>
@@ -105,22 +114,17 @@
             </div>
         </div>
         <p class="zoom_card_tips">点击会员卡可放大</p>
-         <div style="margin:10px 5%;">
+        <div style="margin:10px 5%;">
             <a class="btn" href="javascript:;" onClick="$('.pay_dialog').show();">付款</a>
-         </div>
-
-
-
-          	<empty name='info.is_bind'>
-        <div class="h_item_container" style="display:none;">
-      
-        	 <p style="color: darkgray;">（若已是实体店会员，可点击 绑定实体店会员卡）</p>
-                 <div class="form-item pt_10">
-                	<button class="home_btn submit-btn mb_10 flex_1 yellow_btn" type="button" id='bind_card' >绑定实体店会员卡</button>
-                 </div>
-        	
-<!--         	<a style="padding-right:10px;" class="h_item" href="{:U('writeCardInfo')}&edit=1"><img style="vertical-align: -5px;" width="12" src="{:ADDON_PUBLIC_PATH}/phone_1.png"/>   {$info.phone} <span class="btn fr" style="display:inline; width:auto; height:14px; line-height:14px; padding:4px 10px;">绑定新号码</span></a> -->
         </div>
+        <empty name='info.is_bind'>
+            <div class="h_item_container" style="display:none;">
+                <p style="color: darkgray;">（若已是实体店会员，可点击 绑定实体店会员卡）</p>
+                <div class="form-item pt_10">
+                    <button class="home_btn submit-btn mb_10 flex_1 yellow_btn" type="button" id='bind_card'>绑定实体店会员卡</button>
+                </div>
+                <!--            <a style="padding-right:10px;" class="h_item" href="{:U('writeCardInfo')}&edit=1"><img style="vertical-align: -5px;" width="12" src="{:ADDON_PUBLIC_PATH}/phone_1.png"/>   {$info.phone} <span class="btn fr" style="display:inline; width:auto; height:14px; line-height:14px; padding:4px 10px;">绑定新号码</span></a> -->
+            </div>
         </empty>
         <p class="copyright" style="display:none;">{$system_copy_right}</p>
     </div>
@@ -135,69 +139,74 @@
     <div class="bottom_nav_blank"></div>
 </body>
 <script type="text/javascript">
-document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
-	WeixinJSBridge.call('hideToolbar');
-});
-$('#bind_card').click(function(){
-	window.location.href="{:addons_url('Card://Wap/bindCard')}";
+/*document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+    WeixinJSBridge.call('hideToolbar');
+});*/
+$('#bind_card').click(function() {
+    window.location.href = "{:addons_url('Card://Wap/bindCard')}";
 });
 
 
-function zoomCard(){
+function zoomCard() {
     $('.zoom_card_container').show();
     $('.zoom_card').addClass('zoom_card_do');
     $('.zoom_card_back').addClass('zoom_card_back_do');
 }
-function closeZoomCard(){
+
+function closeZoomCard() {
     $('.zoom_card').removeClass('zoom_card_do').removeClass('turn_card');
     $('.zoom_card_back').removeClass('turn_card_back').removeClass('zoom_card_back_do');
-    $('.zoom_card_front_container').css('z-index','10002');
-    $('.zoom_card_back_container').css('z-index','10001');
+    $('.zoom_card_front_container').css('z-index', '10002');
+    $('.zoom_card_back_container').css('z-index', '10001');
     $('.zoom_card_container').fadeOut();
-    
+
 }
-function turnCard(){
+
+function turnCard() {
     $('.zoom_card').addClass('turn_card');
     $('.zoom_card_back').addClass('turn_card_back');
-    $('.zoom_card_front_container').css('z-index','10001');
-    $('.zoom_card_back_container').css('z-index','10002');
+    $('.zoom_card_front_container').css('z-index', '10001');
+    $('.zoom_card_back_container').css('z-index', '10002');
 }
-function turnBackCard(){
+
+function turnBackCard() {
     $('.zoom_card').removeClass('turn_card');
     $('.zoom_card_back').removeClass('turn_card_back');
-    $('.zoom_card_front_container').css('z-index','10002');
-    $('.zoom_card_back_container').css('z-index','10001');
+    $('.zoom_card_front_container').css('z-index', '10002');
+    $('.zoom_card_back_container').css('z-index', '10001');
 }
-function submitPay(){
+
+function submitPay() {
     var shop = $('select[name="branch_id"]').val();
     var type = $('select[name="pay_type"]').val();
     var coupon = $('select[name="coupon_id"]').val();
     var price = $('input[name="price"]').val();
     var password = $('input[name="password"]').val();
-    if(type==0){
+    if (type == 0) {
         $.Dialog.fail('请选择支付类型');
         return;
     }
-    if(price==""){
+    if (price == "") {
         $.Dialog.fail('请填写消费金额');
         return;
     }
-    if(password==""){
+    if (password == "") {
         $.Dialog.fail('请填写密码');
         return;
     }
     $.Dialog.loading('支付中...');
-    $.post('{:U("do_buy")}',$('form').serializeArray(),function(data){
-        if(data.status==1){
+    $.post('{:U("do_buy")}', $('form').serializeArray(), function(data) {
+        if (data.status == 1) {
             $.Dialog.success(data.info);
-            setTimeout(function(){
+            setTimeout(function() {
                 $('.pay_dialog').hide();
                 window.location.reload();
-            },1500)
-        }else{
+            }, 1500)
+        } else {
             $.Dialog.fail(data.info);
         }
     });
 }
 </script>
+
 </html>
