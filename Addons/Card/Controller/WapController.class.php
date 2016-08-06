@@ -1164,10 +1164,11 @@ class WapController extends BaseController {
 	//积分排行榜
 	function score_billboard(){$this -> assign('config',$config);
 		//$top5 = M ( 'signin_log' )->where ( $w1 )->order ( 'id ASC' )->limit ( 5 )->select ();
-		$data=M('user')-> order ( 'score DESC' )->getFields('uid,headimgurl,score');
+		$data=M('user')-> order ( 'score DESC' )-> getFields('uid,headimgurl,score');
 		foreach ( $data as &$vo ) {
             $vo ['nickname'] = get_username($vo['uid']);
         }
+        array_splice($data, count($data)-1);
 		$this->assign('user',$data);
 		$this -> display();
 	}
