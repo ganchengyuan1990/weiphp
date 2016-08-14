@@ -35,7 +35,9 @@ body{
     	<div class="icon_lists">
             <volist name="category" id="vo">
                 <a class="item" href="{$vo.url}">
-                    <span class="icon"><img src="{$vo.icon}"/></span>
+                    <span class="icon"><!--     <img src="{$vo.icon}"/>-->
+                        <i class="iconfont">&#xe604;</i>
+                        <!--     <embed src="{:CUSTOM_TEMPLATE_PATH}Index/ColorV4/coffee.svg" type="image/svg+xml" />--></span>
                     <span class="click_item_txt">{$vo.title}</span>
                 </a>
             </volist>
