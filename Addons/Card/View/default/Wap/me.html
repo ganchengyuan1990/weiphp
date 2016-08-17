@@ -41,7 +41,7 @@
                         <else/>体验卡</notempty>
                 </a>
             </p>
-            <div class="my_card_nav">
+            <div class="my_card_nav" style="display:none;">
                 <!--  <a href="{:addons_url('Coupon://Wap/personal')}&use=1">优惠券<br/>{$coupon_count}</a>-->
                 <a disabled='ture'>优惠券<br/>{$coupon_count}</a>
                 <a disabled='ture'>代金券<br/>{$shop_coupon_count}</a>
@@ -52,7 +52,7 @@
             </div>
             <a class="edit_icon" href="{:U('writeCardInfo')}&edit=1"></a>
         </div>
-        <div class="maskDiv">
+        <div class="maskDiv"></div>
         <div class="h_item_container">
             <!--    <a class="h_item" href="{:addons_url('Coupon://Wap/personal')}"><img style="vertical-align: -5px;" width="24" src="{:ADDON_PUBLIC_PATH}/ticket.png"/> 我的优惠券 <span class="colorless">({$coupon_count})</span><em></em></a>
             <div class="h_item_line"></div>
