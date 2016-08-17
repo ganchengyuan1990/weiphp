@@ -379,18 +379,25 @@ h6 {
 
 .my_card .head {
     position: absolute;
-    left: 20px;
+    left: 50%;
+    margin-left: -25px;
     top: 30px;
     border-radius: 100px;
     width: 60px;
     height: 60px;
+    z-index: 300;
 }
 
 .my_card .name {
-    font-size: 16px;
+    font-size: 14px;
+    position: absolute;
     font-weight: bold;
     padding: 7px 0;
-    color: #720505
+    top: 75px;
+    margin-left: -16px;
+    left: 50%;
+    color: #720505;
+    z-index: 300;
 }
 
 .my_card .level {
@@ -1018,4 +1025,13 @@ h6 {
 
 div.content > section  > section{
 	width: 94% !important;
+}
+
+div.maskDiv {
+    position: absolute;
+    top: 0;
+    background: rgba(0,0,0,0.65);
+    height: 110px;
+    width: 100%;
+    z-index: 100;
 }
