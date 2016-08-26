@@ -60,16 +60,16 @@
             <div class="h_item_line"></div>
             <a class="h_item" href="{:addons_url('Coupon://Wap/personal')}"><img style="vertical-align: -6px;" width="18" src="{:ADDON_PUBLIC_PATH}/gift.png"/>&nbsp;&nbsp;我的礼品券 <span class="colorless">({$couponCount|intval})</span><em></em></a> 
 <div class="h_item_line"></div>-->
-            <a class="h_item" href="{:U('privilege')}"><img width="24" src="{:ADDON_PUBLIC_PATH}/vip.png" /> 会员卡特权<em></em></a>
+            <a class="h_item" href="{:U('privilege')}"><i class="iconfont">&#xe60e;</i>会员卡特权<em></em></a>
             <div class="h_item_line"></div>
-            <!--  <a class="h_item" href="{:addons_url('Card://Wap/recharge')}" ><img style="vertical-align: -5px;" width="24" src="{:ADDON_PUBLIC_PATH}/money.png"/> 我的账单<em></em></a>-->
+            <!--  <a class="h_item" href="{:addons_url('Card://Wap/recharge')}" ><img style="vertical-align: -5px;" width="24" src="{:ADDON_PUBLIC_PATH}/money.png"/> 我的账单<em></em></a>
             <a class="h_item" href="{:addons_url('Card://Wap/score_rule')}"><img style="vertical-align: -5px;" width="22" src="{:ADDON_PUBLIC_PATH}/score_method_gray.png" />&nbsp;&nbsp;积分规则<em></em></a>
+            <div class="h_item_line"></div>-->
+            <a class="h_item" href="{:U('score_exchange')}"><i class="iconfont">&#xe60b;</i>积分兑换<em></em></a>
             <div class="h_item_line"></div>
-            <a class="h_item" href="{:U('score_exchange')}"><img style="vertical-align: -7px;" width="20" src="{:ADDON_PUBLIC_PATH}/gift.png" />&nbsp;&nbsp;积分兑换<em></em></a>
+            <a class="h_item" href="{:addons_url('Card://Wap/introduction')}"><i class="iconfont">&#xe613;</i>会员卡使用说明<em></em></a>
             <div class="h_item_line"></div>
-            <a class="h_item" href="{:addons_url('Card://Wap/introduction')}"><img style="vertical-align: -5px;" width="22" src="{:ADDON_PUBLIC_PATH}/intro.png" />&nbsp;&nbsp;会员卡使用说明<em></em></a>
-            <div class="h_item_line"></div>
-            <a class="h_item" href="{:U( 'writeCardInfo')}&edit=1"><img style="vertical-align: -5px;" width="24" src="{:ADDON_PUBLIC_PATH}/setting_icon.png" /> 完善会员卡资料 <em></em></a>
+            <a class="h_item" href="{:U( 'writeCardInfo')}&edit=1"><i class="iconfont">&#xe612;</i>完善会员卡资料 <em></em></a>
         </div>
         <div class="card" onClick="zoomCard();" style="background:none;">
             <img class="card_bg" src="{$config.background_url}" />
