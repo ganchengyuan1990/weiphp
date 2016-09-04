@@ -25,7 +25,7 @@
     var SIGNATURE = '{$jsapiParams.signature}';
     </script>
     <script type="text/javascript" src="__STATIC__/jquery-2.0.3.min.js"></script>
-    <script type="text/javascript" src="../Public/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="{:ADDON_PUBLIC_PATH}/js/jweixin-1.0.0.js"></script>
     <script type="text/javascript" src="minify.php?f=__JS__/prefixfree.min.js,__JS__/m/dialog.js,__JS__/m/flipsnap.min.js,__JS__/m/mobile_module.js&v={:SITE_VERSION}"></script>
 </head>
 <link href="{:ADDON_PUBLIC_PATH}/card.css?v={:SITE_VERSION}" rel="stylesheet" type="text/css">
@@ -36,7 +36,7 @@
             <img class="head" src="{$userInfo.headimgurl}" />
             <p class="name">{$userInfo.nickname}</p>
             <p class="level">
-                <a href="{:U('level_intro')}"><img src="{:ADDON_PUBLIC_PATH}/king.png" width="16" />
+                <a href="{:U('level_intro')}"><i class="iconfont">&#xe600;</i>
                     <notempty name="levelInfo[level]"> {$levelInfo.level}
                         <else/>体验卡</notempty>
                 </a>
@@ -71,7 +71,7 @@
             <div class="h_item_line"></div>
             <a class="h_item" href="{:U( 'writeCardInfo')}&edit=1"><i class="iconfont">&#xe612;</i>完善会员卡资料 <em></em></a>
         </div>
-        <div class="card" onClick="zoomCard();" style="background:none;">
+        <div class="card" style="background:none;">
             <img class="card_bg" src="{$config.background_url}" />
             <div class="card_container">
                 <p class="logo">
@@ -83,7 +83,7 @@
             </div>
         </div>
         <div class="zoom_card_container" style="display:none">
-            <a href="javascript:;" onClick="closeZoomCard();" class="close"></a>
+            <a class="close"></a>
             <div class="zoom_card_front_container">
                 <div class="card zoom_card" onClick="turnCard();" style="background:none">
                     <img class="card_bg" src="{$config.background_url}" />
@@ -139,5 +139,5 @@
     </nav>
     <div class="bottom_nav_blank"></div>
 </body>
-<script type="text/javascript" src="../Public/js/me.js"></script>
+<script type="text/javascript" src="{:ADDON_PUBLIC_PATH}/js/me.js"></script>
 </html>

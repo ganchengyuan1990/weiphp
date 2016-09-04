@@ -131,6 +131,41 @@ $("#calendar").calendarWidget({
 	year: {$year},
 	signDays:sDayJson					  
 });
+
+//增加朋友圈分享功能
+function doShare(){
+    $.WeiPHP.showShareTips();
+}
+wx.ready(function(){
+    var shareData = {
+        title: '我已在悦慢签到{$day_count}次，小伙伴们快来跟我比比', // 分享标题
+        desc: '慢城会员中心', // 分享描述
+        link: window.location.href, //分享的链接地址
+        imgUrl: "http://jasongan.cn/php/weiphp3/Addons/Card/View/default/Public/umind.png", // 分享图标
+        type: 'link', // 分享类型,music、video或link，不填默认为link
+        dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+        success: function () { 
+            // 用户确认分享后执行的回调函数
+            /*$('.shareTips').remove();
+            //分享送积分
+            //add_credit();
+            $.post("http://jasongan.cn/php/weiphp3/index.php?s=/addon/Card/Wap/do_share.html",function(d){
+                if(d!=0){
+                alert("恭喜，分享朋友圈得积分1分！");
+                    window.location.reload();
+                }
+                
+            });*/
+            $.Dialog.confirm('提示', '感谢分享！我们会越来越好！');
+        },
+        cancel: function () { 
+            // 用户取消分享后执行的回调函数
+            $('.shareTips').remove();
+        }
+    }
+    wx.onMenuShareAppMessage(shareData);
+    wx.onMenuShareTimeline(shareData);
+});
 </script>
 </body>
 </html>
