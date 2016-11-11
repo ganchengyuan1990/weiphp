@@ -31,10 +31,10 @@
 
 <body>
 	<div id="container" class="container body">
-    	<!--<div class="common_header">
+    	<div class="common_header" style="display: none;">
         	<a class="back" href="javascript:;" onClick="history.back()"></a>
             <span>我的特权</span> 
-        </div>-->
+        </div>
         <ul class="toggle_list" style="margin-top:10px">
         <volist name='lists' id="vo">
         	<li class="single_item m_15 p_10 toggle_list_open">
@@ -61,5 +61,11 @@
     </div>
 </body>
 <script type="text/javascript">
+    $(document).ready(function() {
+        var appVersion = navigator.appVersion;
+        if(appVersion.indexOf('iPhone') >= 0) {
+            $('.common_header').show();
+        }
+    });
 </script>
 </html>

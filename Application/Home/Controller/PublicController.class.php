@@ -46,9 +46,10 @@ class PublicController extends HomeController {
 		// }
 		// 获取模型信息
 		$model = $this->model;
+
 		
 		// 搜索条件
-		$mp_ids = M ( 'public_link' )->where ( "uid='{$this->mid}'" )->getFields ( 'mp_id' );
+		$mp_ids = M ( 'public_link' )->where ( "uid=1" )->getFields ( 'mp_id' );
 		$map ['id'] = 0;
 		if (! empty ( $mp_ids )) {
 			$map ['id'] = $map3 ['mp_id'] = array (
@@ -61,6 +62,8 @@ class PublicController extends HomeController {
 				$countArr [$vo ['mp_id']] = $vo ['num'];
 			}
 		}
+
+
 		
 		// 读取模型数据列表
 		$name = parse_name ( get_table_name ( $model ['id'] ), true );
@@ -72,6 +75,7 @@ class PublicController extends HomeController {
 		}
 		
 		$list_data ['list_data'] = $listArr;
+		dump($list_data);
 		$this->assign ( $list_data );
 		
 		$this->display ( 'Publics/lists' );
